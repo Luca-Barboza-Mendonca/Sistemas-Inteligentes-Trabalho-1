@@ -1,0 +1,44 @@
+[
+    {
+        "nome": "ilha di capri",
+        "predicao": 254842.22936886424,
+        "real": 240000,
+        "Erro percentual": 6.184262237026767
+    },
+    {
+        "nome": "bela vista",
+        "predicao": 247586.26258063893,
+        "real": 205900,
+        "Erro percentual": 20.24587789249098
+    },
+    {
+        "nome": "av ernesto otero",
+        "predicao": 240442.4246820369,
+        "real": 170000,
+        "Erro percentual": 41.436720401198166
+    },
+    {
+        "nome": "ana pernigotti",
+        "predicao": 254842.22936886424,
+        "real": 220000,
+        "Erro percentual": 15.837376985847381
+    },
+    {
+        "nome": "herval do sul",
+        "predicao": 378329.11525592115,
+        "real": 430000,
+        "Erro percentual": 12.016484824204385
+    },
+    {
+        "nome": "Nilo Cardoso",
+        "predicao": 247586.26258063893,
+        "real": 180000,
+        "Erro percentual": 37.547923655910516
+    },
+    {
+        "nome": "Av atlantica",
+        "predicao": 247586.26258063893,
+        "real": 178000,
+        "Erro percentual": 39.093405944179175
+    }
+]
