@@ -4,7 +4,7 @@ import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import json
 
-area = ctrl.Antecedent(np.arange(0,700, 1), "area")
+area = ctrl.Antecedent(np.arange(200,700, 1), "area")
 distancia = ctrl.Antecedent(np.arange(3601,0, -1), "distancia")
 preco = ctrl.Consequent(np.arange(0, 500000, 1), "preco")
 

@@ -4,28 +4,28 @@ import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 import json
 
-area = ctrl.Antecedent(np.arange(0,700, 1), "area")
+area = ctrl.Antecedent(np.arange(200,700, 1), "area")
 distancia = ctrl.Antecedent(np.arange(0,3601, 1), "distancia")
 preco = ctrl.Consequent(np.arange(0, 500000, 1), "preco")
 
 area.automf(3)
 
-distancia['good'] = fuzz.trimf(distancia.universe, [0,0, 1800])
-distancia['average'] = fuzz.trimf(distancia.universe, [0,1800, 3600])
-distancia['poor'] = fuzz.trimf(distancia.universe, [1800,3600, 3600])
+distancia['good'] = fuzz.trimf(distancia.universe, [0,0, 300])
+distancia['average'] = fuzz.trimf(distancia.universe, [0,300, 1400])
+distancia['poor'] = fuzz.trimf(distancia.universe, [1400,3600, 3600])
 
 preco.automf(3)
 
 # area.view()
-distancia.view()
-plt.show()
+# distancia.view()
 # preco.view()
+plt.show()
 
-rule1 = ctrl.Rule(distancia['poor'] , preco['poor'])
+rule1 = ctrl.Rule(area['poor'] | distancia['poor'] , preco['poor'])
 
-rule2 = ctrl.Rule(distancia['average'] , preco['average'])
+rule2 = ctrl.Rule(area['average'] | distancia['average'] , preco['average'])
 
-rule3 = ctrl.Rule(distancia['good'] , preco['good'])
+rule3 = ctrl.Rule(area['good'] | distancia['good'] , preco['good'])
 
 preco_ctrl = ctrl.ControlSystem([rule1, rule2, rule3])
 precificador = ctrl.ControlSystemSimulation(preco_ctrl)
@@ -44,7 +44,7 @@ for t in terrenos:
     input_area = t['area']
     input_distancia = t['distancia']
 
-    # precificador.input['area'] = input_area
+    precificador.input['area'] = input_area
     precificador.input['distancia'] = input_distancia
 
     precificador.compute()
