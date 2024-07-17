@@ -10,9 +10,13 @@ preco = ctrl.Consequent(np.arange(0, 500000, 1), "preco")
 
 area.automf(3)
 
+# area['poor'] = fuzz.trimf(area.universe, [200,200, 300])
+# area['average'] = fuzz.trimf(area.universe, [200,300, 500])
+# area['good'] = fuzz.trimf(area.universe, [300,500, 800])
+
 distancia['good'] = fuzz.trimf(distancia.universe, [0,0, 300])
-distancia['average'] = fuzz.trimf(distancia.universe, [0,300, 1400])
-distancia['poor'] = fuzz.trimf(distancia.universe, [1400,3600, 3600])
+distancia['average'] = fuzz.trimf(distancia.universe, [0,300, 1000])
+distancia['poor'] = fuzz.trimf(distancia.universe, [300,1000, 2500])
 
 preco.automf(3)
 

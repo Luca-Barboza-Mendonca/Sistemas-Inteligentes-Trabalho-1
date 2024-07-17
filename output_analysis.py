@@ -15,7 +15,7 @@ slope, intercept, _, _, _ = linregress(real, pred)
 
 plt.scatter(real, pred, label='Data Points')
 
-plt.plot(real, slope * real + intercept, color='red', label='Line of Best Fit')
+plt.plot(real, slope * real + intercept, color='red', label='Line of Best Fit (Predicted)')
 plt.plot(real, real, color='green', linestyle='--', label="Perfect Distribution")
 
 plt.xlabel("Real")
