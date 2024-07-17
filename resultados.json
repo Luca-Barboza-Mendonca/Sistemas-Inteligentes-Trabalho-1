@@ -1,1 +1,62 @@
-[{"nome": "ilha di capri", "predicao": 248309.07654391037, "real": 240000, "Erro percentual": 3.4621152266293214}, {"nome": "bela vista cassino", "predicao": 206225.41173611686, "real": 228000, "Erro percentual": 9.550258010475062}, {"nome": "bela vista", "predicao": 206225.41173611686, "real": 160000, "Erro percentual": 28.890882335073037}, {"nome": "av ernesto otero", "predicao": 163836.5047587898, "real": 170000, "Erro percentual": 3.6255854360060082}, {"nome": "ana pernigotti", "predicao": 248309.07654391037, "real": 220000, "Erro percentual": 12.867762065413805}, {"nome": "Nilo Cardoso", "predicao": 206225.41173611686, "real": 180000, "Erro percentual": 14.569673186731588}, {"nome": "Av atlantica", "predicao": 206225.41173611686, "real": 178000, "Erro percentual": 15.856972885458912}, {"nome": "Av Tramandai", "predicao": 416665.8333326663, "real": 550000, "Erro percentual": 24.242575757697036}, {"nome": "Leivas Otero", "predicao": 206225.41173611686, "real": 180000, "Erro percentual": 14.569673186731588}, {"nome": "Av Oswaldo cruz", "predicao": 163836.5047587898, "real": 200000, "Erro percentual": 18.081747620605107}]
+[
+    {
+        "nome": "ilha di capri",
+        "predicao": 235722.01749298096,
+        "real": 240000,
+        "Erro percentual": 1.7824927112579343
+    },
+    {
+        "nome": "bela vista cassino",
+        "predicao": 194754.51059721952,
+        "real": 228000,
+        "Erro percentual": 14.58135500121951
+    },
+    {
+        "nome": "bela vista",
+        "predicao": 182641.00652351996,
+        "real": 160000,
+        "Erro percentual": 14.150629077199975
+    },
+    {
+        "nome": "av ernesto otero",
+        "predicao": 180389.56953577918,
+        "real": 170000,
+        "Erro percentual": 6.111511491634815
+    },
+    {
+        "nome": "ana pernigotti",
+        "predicao": 234956.72338028136,
+        "real": 220000,
+        "Erro percentual": 6.798510627400617
+    },
+    {
+        "nome": "Nilo Cardoso",
+        "predicao": 182641.00652351996,
+        "real": 180000,
+        "Erro percentual": 1.4672258463999768
+    },
+    {
+        "nome": "Av atlantica",
+        "predicao": 187027.2069131832,
+        "real": 178000,
+        "Erro percentual": 5.0714645579680955
+    },
+    {
+        "nome": "Av Tramandai",
+        "predicao": 352636.0118699118,
+        "real": 550000,
+        "Erro percentual": 35.88436147819785
+    },
+    {
+        "nome": "Leivas Otero",
+        "predicao": 182641.00652351996,
+        "real": 180000,
+        "Erro percentual": 1.4672258463999768
+    },
+    {
+        "nome": "Av Oswaldo cruz",
+        "predicao": 180389.56953577918,
+        "real": 200000,
+        "Erro percentual": 9.805215232110408
+    }
+]
