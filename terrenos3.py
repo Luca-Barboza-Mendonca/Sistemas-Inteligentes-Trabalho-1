@@ -22,7 +22,7 @@ preco.automf(5)
 
 # area.view()
 # distancia.view()
-preco.view()
+# preco.view()
 plt.show()
 
 rule1 = ctrl.Rule(area['poor'] & distancia['poor'] , preco['poor'])
