@@ -18,20 +18,24 @@ distancia['good'] = fuzz.trimf(distancia.universe, [0,0, 300])
 distancia['average'] = fuzz.trimf(distancia.universe, [0,300, 1000])
 distancia['poor'] = fuzz.trimf(distancia.universe, [300,1000, 2500])
 
-preco.automf(3)
+preco.automf(5)
 
 # area.view()
 # distancia.view()
-# preco.view()
+preco.view()
 plt.show()
 
-rule1 = ctrl.Rule(area['poor'] | distancia['poor'] , preco['poor'])
+rule1 = ctrl.Rule(area['poor'] & distancia['poor'] , preco['poor'])
+
+rule5 = ctrl.Rule(area['poor'], preco['mediocre'])
 
 rule2 = ctrl.Rule(area['average'] | distancia['average'] , preco['average'])
 
-rule3 = ctrl.Rule(area['good'], preco['good'])
+rule3 = ctrl.Rule(area['good'], preco['decent'])
 
-preco_ctrl = ctrl.ControlSystem([rule1, rule2, rule3])
+rule4 = ctrl.Rule(area['good'] & distancia['good'], preco['good'])
+
+preco_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5])
 precificador = ctrl.ControlSystemSimulation(preco_ctrl)
 
 # precificador.input['area'] = 420
