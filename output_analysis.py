@@ -15,17 +15,17 @@ with open("resultados.json", "r") as f:
 
 slope, intercept, _, _, _ = linregress(real, pred)
 
-plt.scatter(real, pred, label='Data Points')
+plt.scatter(real, pred, label='Pontos de predição')
 
-for i, label in enumerate(names):
-    plt.annotate(label, (real[i], pred[i]), textcoords="offset points", xytext=(0,10), ha='center')
+# for i, label in enumerate(names):
+#     plt.annotate(label, (real[i], pred[i]), textcoords="offset points", xytext=(0,10), ha='center')
 
-plt.plot(real, slope * real + intercept, color='red', label='Line of Best Fit (Predicted)')
-plt.plot(real, real, color='green', linestyle='--', label="Perfect Distribution")
+plt.plot(real, slope * real + intercept, color='red', label='Linha de Best Fit (Predito)')
+plt.plot(real, real, color='green', linestyle='--', label="Distribuição perfeita")
 
 plt.xlabel("Real")
-plt.ylabel("Predicted")
-plt.title("Real Values vs Fuzzy Values")
+plt.ylabel("Predito")
+plt.title("Valores Reais vs Valores Preditos")
 plt.legend()
 
 plt.show()
